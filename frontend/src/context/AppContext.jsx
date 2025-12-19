@@ -5,9 +5,10 @@ export const AppContext = createContext()
 
 export const AppContextProvider = ({children}) => {
     const navigate = useNavigate()
+    const currencySymbol = "$"
 
     const value = {
-        doctors,navigate
+        doctors,navigate,currencySymbol
     }
 
     return <AppContext.Provider value={value}>
